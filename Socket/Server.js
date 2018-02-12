@@ -5,7 +5,9 @@ var httpServer = http.createServer(function (req, res) {
     
 });
 
-httpServer.listen(1337);
+const port = process.env.PORT || 1337;
+console.log('port : ' + port);
+httpServer.listen(port);
 
 var socketServer = new net({
     httpServer: httpServer

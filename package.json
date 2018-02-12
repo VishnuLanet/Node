@@ -2,7 +2,7 @@
   "name": "iosnotification",
   "version": "1.0.0",
   "description": "",
-  "main": "Socket/Server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,5 +13,8 @@
     "express": "^4.16.2",
     "http": "0.0.0",
     "websocket": "^1.0.25"
+  },
+  "scripts":{
+    "start":"node Socket\Server.js"
   }
 }
